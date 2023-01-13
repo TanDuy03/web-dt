@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root{
+    --color-gray: #393E3F;
+    --color-white: #fff;
+    --color-yellow: #FBBB26;
+}
+
+.wrapper {
+    --font-popin: 'Poppins', sans-serif;
+    --font-mont: 'Montserrat', sans-serif;
+    overflow: hidden;
+}
+
+/* Start Header  */
+
+.topBar {
+    position: relative;
+    height: 45px;
+    width: 100%;
+    background-color: #e9ae25;
+    color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topBar .topbar_left{
+    display: inline-flex;
+    margin-left: 50px;
+}
+
+.topbar_left .topbar_item span {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.topbar_left .topbar_item {
+    padding: 0 20px;
+}
+
+.topBar .topbar_right{
+    display: flex;
+    margin-right: 50px;
+    align-items: center;
+}
+
+.topbar_right .item_language {
+    display: flex;
+}
+
+.item_language .item_vn{
+    padding-right: 10px;
+}
+
+.item_language .item_vn,
+.item_language .item_uk{
+    height: 28px;
+}
+
+.item_language .item_vn img,
+.item_language .item_uk img{
+    height: 100%;
+}
+
+.topbar_right .item_cart a,
+.topbar_right .item_user a{
+    color: var(--color-white);
+}
+
+.topbar_right .item_cart a {
+    padding-right: 15px;
+}
+
+/*  */
+
+.header .header-main{
+    height: 80px;
+    width: 100%;
+    background-color: var(--color-gray);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 20px;
+}
+
+.header-main .header_logo {
+    height: 80px;
+    line-height: 80px;
+}
+.header-main .header_logo img{
+    height: 100%
+}
+
+.header-main .header_menu ul li{
+    float: left;
+    padding: 0 20px;
+}
+
+.header-main .header_menu ul li a{
+    color: var(--color-white);
+    font-weight: 600;
+    font-size: 14px;
+    font-family: var(--font-mont);
+}
+
+.header-main .header_menu ul li a:hover{
+    text-decoration: none;
+}
+
+.header-main .item_search a {
+    color: var(--color-white);
+}
+
+.line-hover{
+    width: 0;
+    height: 3px;
+    background-color: var(--color-yellow);
+    position: fixed;
+    pointer-events: none;
+    transition: all 0.25s linear;
+}
+
+.header_menu #subMenu{
+    position: absolute;
+    background-color: brown;
+    width: 150px;
+}
+
+.header_menu #subMenu a{
+    float: none;
+    display: block;
+}
